@@ -1,0 +1,237 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+}
+
+/* Header */
+header {
+    background-color: #282c34;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: #61dafb;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #21a1f1;
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #282c34;
+}
+
+section p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.controls span {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #fff;
+    user-select: none;
+    padding: 0 1rem;
+}
+
+/* Product Container */
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Product */
+.product {
+    display: inline-block;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    color: #282c34;
+}
+
+.product p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.product button, .product .payment-link {
+    display: inline-block;
+    margin: 0.5rem 0;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product button {
+    background-color: #61dafb;
+    color: #fff;
+}
+
+.product button:hover {
+    background-color: #21a1f1;
+}
+
+.product .payment-link {
+    background-color: #282c34;
+    color: #fff;
+    text-decoration: none;
+}
+
+.product .payment-link:hover {
+    background-color: #333;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #282c34;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.7rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+form button {
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #61dafb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #21a1f1;
+}
+
+/* Footer */
+footer {
+    background-color: #282c34;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
